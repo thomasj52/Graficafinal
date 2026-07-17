@@ -36,8 +36,10 @@ Material:
     m_Floats:
     - _Frequency: 2.15
     - _Frequency1: 0
-    - _LineSpeed: 2
-    - _WaveLenght: 0.0054
+    - _LineSpeed: 1
+    - _Metallic: 0
+    - _Smoothness: 0.537
+    - _WaveLenght: 0.0239
     - _WaveLenght1: 0
     - __dirty: 0
     m_Colors:
