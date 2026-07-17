@@ -48,6 +48,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 2800000, guid: ac479986fcfb8a344a1c64ee4557983f, type: 3}
+        m_Scale: {x: 8, y: 8}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -95,14 +99,14 @@ Material:
     - _waveDensity: 10.71
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color2: {r: 1, g: 1, b: 1, a: 0}
+    - _Color2: {r: 0.8207547, g: 0.80914026, b: 0.80914026, a: 0}
     - _DepthScale: {r: 5, g: 0.5, b: 5, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ObjectWaveRadius: {r: 0, g: 0, b: 0, a: 0}
     - _SplashPos1: {r: -3.41, g: 0.30399352, b: 1.86, a: 0}
     - _WaterPrincipa: {r: 0.05833894, g: 0.5386303, b: 0.6509434, a: 0}
-    - _WaterPrincipal: {r: 0.05833856, g: 0.5386303, b: 0.6509434, a: 0}
+    - _WaterPrincipal: {r: 0.13861692, g: 0.7049925, b: 0.8396226, a: 0}
     - _WaterSecondary: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 0}
-    - _splashPos: {r: -0.15968876, g: 2.0236344, b: 921.90765, a: 0}
+    - _splashPos: {r: 1.8304495, g: 1.5853252, b: 917.38513, a: 0}
     - _wavelenght: {r: 0, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
