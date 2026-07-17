@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_SueloMojado
-  m_Shader: {fileID: 4800000, guid: 239c3e3533b3fff45915306a922a3a8a, type: 3}
+  m_Name: M_LightningFog
+  m_Shader: {fileID: 4800000, guid: 0611d269a2e428d4facc045148cc0347, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -41,19 +41,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 82802ccdfaa3ee74aaf637c950232fcc, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: aa0c3ea8965be9a4ab87cce181643e37, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap1:
-        m_Texture: {fileID: 2800000, guid: 31c6163b6243da04d8523e5aa3b6c810, type: 3}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 8e05af3e55e988e4890795f2a3d10e2b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -64,60 +60,45 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Roughness:
-        m_Texture: {fileID: 2800000, guid: 51430ce2313cf9d47b03ccd2f7b9ad05, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _WaterNormal:
-        m_Texture: {fileID: 2800000, guid: b59a96d28fb580141956844b613d65b2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _WetMask:
-        m_Texture: {fileID: 2800000, guid: 99a9e0ff9a812c549852cc89c05b56a6, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BaseSmoothness: 0.55
     - _BumpScale: 1
+    - _ChromaticAberration: 0.1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FogAlpha: 0.6
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0.1
-    - _MezclaAgua: 0.5
+    - _Lightning: 1
+    - _LightningSmoothness: 1
+    - _Metallic: 0
     - _Mode: 0
+    - _NoiseSpeed: 0.02
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Smoothness: 0.9
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TiliingNormal: 4
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1
     - _UVSec: 0
-    - _WaterSpped: 0.1
-    - _WetAmount: 0.6
-    - _WetAmount1: 1
-    - _WetContrast: 0.5
-    - _WetDarkness: 0.4
-    - _WetSmoothness: 0.93
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorBase: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorBase1: {r: 0.01886791, g: 0.0150409285, b: 0.0150409285, a: 1}
-    - _ColorSuelo: {r: 0.049999982, g: 0.049999982, b: 0.079999976, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tiling: {r: 14, g: 14, b: 0, a: 0}
-    - _VelocidadAgua: {r: 0, g: 0.02, b: 0, a: 0}
-    - _VelocidadAgua1: {r: 0.03, g: -0.03, b: 0, a: 0}
-    - _WaterNormalTilling: {r: 6, g: 6, b: 0, a: 0}
-    - _WetColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
-    - _WetMaskTiling: {r: 1.2, g: 1.2, b: 0, a: 0}
+    - _FogColor: {r: 0.45, g: 0.47999996, b: 0.54999995, a: 1}
+    - _LightningColor: {r: 0.75, g: 0.85, b: 1, a: 1}
+    - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
