@@ -6,7 +6,7 @@ public class SceneLoader : MonoBehaviour
     void Start()
     {
         SceneManager.LoadScene("PI_Ciudad_07", LoadSceneMode.Additive);
-        SceneManager.LoadScene("PI_Carta-Barco_03", LoadSceneMode.Additive);
+        SceneManager.LoadScene("PI_CartaCopy-Barco_03", LoadSceneMode.Additive);
     }
 
     void OnEnable()
@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
             foreach (AudioListener al in FindObjectsOfType<AudioListener>())
             {
                 if (al.gameObject.scene.name == "PI_Ciudad_07")
-                    if (al.gameObject.scene.name == "PI_Carta-Barco_03")
+                    if (al.gameObject.scene.name == "PI_CartaCopy-Barco_03")
                         al.enabled = false;
             }
         }
