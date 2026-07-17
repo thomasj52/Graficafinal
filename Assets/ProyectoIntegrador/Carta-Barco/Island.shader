@@ -76,7 +76,7 @@ Shader "Island"
 }
 /*ASEBEGIN
 Version=18900
-0;631;1465;360;1396.043;-114.3739;1;True;False
+0;631;1465;360;1485.807;-81.46013;1.3;True;False
 Node;AmplifyShaderEditor.Vector3Node;4;-630.9231,379.958;Inherit;False;Property;_Height;Height;2;0;Create;True;0;0;0;False;0;False;0,1,0;0,1,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.SamplerNode;7;-1167.185,139.1898;Inherit;True;Property;_heighttexture;height texture;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-382.9729,276.0294;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT3;0,0,0;False;1;COLOR;0
@@ -95,4 +95,4 @@ WireConnection;0;0;1;0
 WireConnection;0;11;9;0
 WireConnection;0;14;5;0
 ASEEND*/
-//CHKSM=17BAE604F80022B131C108D0A277AE06201EFC25
+//CHKSM=BDABE46C4C4F86BE336367E7E74202BE48E02FBF
