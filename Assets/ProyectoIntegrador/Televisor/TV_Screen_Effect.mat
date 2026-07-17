@@ -34,6 +34,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _CurveAmount: 0
+    - _Flicker: 0.14
+    - _NoiseAmount: 1
+    - _ScanlineCount: 100
+    - _ScanlineStrength: 0.25
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []
