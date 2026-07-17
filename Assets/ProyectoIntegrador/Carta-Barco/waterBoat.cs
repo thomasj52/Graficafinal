@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class waterBoat : MonoBehaviour
 {
     [SerializeField] private Material mat; // arrastrá el epicentro en el Inspector
 
-    public float radio = 5f;          // Radio del círculo
-    public float velocidad = 1f;      // Velocidad angular del movimiento
-    public float velocidadRotacion = 50f; // Velocidad de rotación propia
+    public Transform centro;    // Punto central del área
+    public float radio = 5f;    // Radio del círculo
+    public float velocidad = 1f; // Velocidad angular
 
     private float angulo = 0f;
 
@@ -17,10 +18,10 @@ public class waterBoat : MonoBehaviour
         mat.SetVector("_splashPos", transform.position);
         angulo += velocidad * Time.deltaTime;
 
-        // Calculamos la nueva posición en el círculo
+        // Calculamos la posición relativa al centro
         float x = Mathf.Cos(angulo) * radio;
         float z = Mathf.Sin(angulo) * radio;
-        Vector3 nuevaPosicion = new Vector3(x, transform.position.y, z);
+        Vector3 nuevaPosicion = centro.position + new Vector3(x, 0, z);
 
         // Dirección hacia la que se mueve
         Vector3 direccion = nuevaPosicion - transform.position;
@@ -28,11 +29,11 @@ public class waterBoat : MonoBehaviour
         // Actualizamos posición
         transform.position = nuevaPosicion;
 
-        // Rotamos el barco para que mire hacia adelante en la dirección del movimiento
+        // Rotamos el barco para que mire hacia adelante
         if (direccion != Vector3.zero)
         {
             Quaternion rotacion = Quaternion.LookRotation(direccion);
-            transform.rotation = rotacion;
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotacion, 5f * Time.deltaTime);
         }
     }
 }
