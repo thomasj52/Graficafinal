@@ -21,14 +21,21 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.name == "PI_Ciudad_07" || scene.name == "PI_CartaCopy-Barco_03")
+        {
+            AudioListener[] listeners = FindObjectsOfType<AudioListener>();
+            if (listeners.Length > 1)
+            {
+                for (int i = 1; i < listeners.Length; i++)
+                {
+                    listeners[i].enabled = false;
+                }
+            }
+        }
+        
         if (scene.name == "PI_Ciudad_07")
         {
-            foreach (AudioListener al in FindObjectsOfType<AudioListener>())
-            {
-                if (al.gameObject.scene.name == "PI_Ciudad_07")
-                    if (al.gameObject.scene.name == "PI_CartaCopy-Barco_03")
-                        al.enabled = false;
-            }
+            SceneManager.SetActiveScene(scene);
         }
     }
 }

@@ -6420,7 +6420,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+  m_Color: {r: 0.6603774, g: 0.21493416, b: 0.21493416, a: 1}
   m_Intensity: 2
   m_Range: 3
   m_SpotAngle: 30
@@ -16288,7 +16288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d47aee2d587e043bcd6ab8e6396527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: PI_Carta-Barco_03
+  sceneToLoad: PI_CartaCopy-Barco_03
 --- !u!65 &1790176130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16300,7 +16300,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 6.1232336e-17}
+  m_Size: {x: 0.99999994, y: 1, z: 6.1232336e-17}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1867591592
 GameObject:
