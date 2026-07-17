@@ -141,6 +141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: b57adcd6369ab314fae22bb4519cb47c, type: 2}
+  radio: 1
+  velocidad: 2
+  velocidadRotacion: 10
 --- !u!4 &102846031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8764403747236410677, guid: e9ccc27bb6f9f944e8bda508e30456a5, type: 3}
@@ -1867,15 +1870,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8764403747236410677, guid: e9ccc27bb6f9f944e8bda508e30456a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.580641
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 8764403747236410677, guid: e9ccc27bb6f9f944e8bda508e30456a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.86715
+      value: -13.12
       objectReference: {fileID: 0}
     - target: {fileID: 8764403747236410677, guid: e9ccc27bb6f9f944e8bda508e30456a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.9281523
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 8764403747236410677, guid: e9ccc27bb6f9f944e8bda508e30456a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2334,7 +2337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234411495}
   m_LocalRotation: {x: -0.683987, y: -0, z: -0, w: 0.72949415}
-  m_LocalPosition: {x: -0.3262879, y: -37.20174, z: 2.3622172}
+  m_LocalPosition: {x: -0.3262879, y: -37.23, z: 2.65}
   m_LocalScale: {x: 7.7106733, y: 2.493944, z: 6.9007187}
   m_ConstrainProportionsScale: 0
   m_Children: []
