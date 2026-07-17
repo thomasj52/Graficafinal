@@ -14,6 +14,8 @@ public class LightningController : MonoBehaviour
 
     public AudioSource thunderAudio;
 
+    public LightningBolt lightningBolt;
+
     private Color originalFogColor;
     public Color lightningFogColor = new Color(0.65f, 0.7f, 0.8f);
 
@@ -37,8 +39,10 @@ public class LightningController : MonoBehaviour
 
     IEnumerator Flash()
     {
-        RenderSettings.fogColor = lightningFogColor;
+        if (lightningBolt != null)
+            lightningBolt.TriggerBolt();
 
+        RenderSettings.fogColor = lightningFogColor;
         lightningLight.intensity = flashIntensity;
         yield return new WaitForSeconds(0.04f);
 
@@ -49,10 +53,10 @@ public class LightningController : MonoBehaviour
         yield return new WaitForSeconds(0.06f);
 
         lightningLight.intensity = baseIntensity;
-
         RenderSettings.fogColor = originalFogColor;
 
-        yield return new WaitForSeconds(Random.Range(0.5f, 2f));
+        float distancia = Random.Range(0.8f, 2f);
+        yield return new WaitForSeconds(distancia);
 
         thunderAudio.Play();
     }
