@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ProyectoIntegrador/Scenes/HUB_Portales.unity
+    guid: be4e5115a9fb2a648ae0ac1b6faae5d0
+  - enabled: 1
+    path: Assets/ProyectoIntegrador/Scenes/PI_Carta-Barco_03.unity
+    guid: 77502ad1ad1e1184ea0f06d4629fdcc8
+  - enabled: 1
+    path: Assets/ProyectoIntegrador/Scenes/PI_Ciudad_07.unity
+    guid: 4adbff8a31f742948af375c5e55ebe8c
+  - enabled: 1
+    path: Assets/ProyectoIntegrador/Scenes/PI_Televisor_05.unity
+    guid: 94054c384632c284689e343f670ea2ad
   m_configObjects: {}
