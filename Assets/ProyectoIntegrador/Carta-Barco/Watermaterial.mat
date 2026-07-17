@@ -103,6 +103,6 @@ Material:
     - _WaterPrincipa: {r: 0.05833894, g: 0.5386303, b: 0.6509434, a: 0}
     - _WaterPrincipal: {r: 0.058338583, g: 0.5386303, b: 0.6509434, a: 0}
     - _WaterSecondary: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 0}
-    - _splashPos: {r: 1.08, g: 1.86, b: -0.14, a: 0}
+    - _splashPos: {r: -59675.92, g: -5713.14, b: 51176.86, a: 0}
     - _wavelenght: {r: 0, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
