@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 82802ccdfaa3ee74aaf637c950232fcc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 7d501cda63122b14894b78ec2d056b12, type: 3}
+        m_Texture: {fileID: 2800000, guid: aa0c3ea8965be9a4ab87cce181643e37, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap1:
@@ -62,6 +62,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Roughness:
+        m_Texture: {fileID: 2800000, guid: 51430ce2313cf9d47b03ccd2f7b9ad05, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterNormal:
+        m_Texture: {fileID: 2800000, guid: b59a96d28fb580141956844b613d65b2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WetMask:
+        m_Texture: {fileID: 2800000, guid: 99a9e0ff9a812c549852cc89c05b56a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -77,7 +89,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.1
     - _MezclaAgua: 0.5
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -88,12 +100,24 @@ Material:
     - _SrcBlend: 1
     - _TiliingNormal: 4
     - _UVSec: 0
+    - _WaterSpped: 0.1
+    - _WetAmount: 0.6
+    - _WetAmount1: 1
+    - _WetContrast: 0.5
+    - _WetDarkness: 0.4
+    - _WetSmoothness: 0.93
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorBase: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorBase1: {r: 0.01886791, g: 0.0150409285, b: 0.0150409285, a: 1}
     - _ColorSuelo: {r: 0.049999982, g: 0.049999982, b: 0.079999976, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Tiling: {r: 14, g: 14, b: 0, a: 0}
     - _VelocidadAgua: {r: 0, g: 0.02, b: 0, a: 0}
     - _VelocidadAgua1: {r: 0.03, g: -0.03, b: 0, a: 0}
+    - _WaterNormalTilling: {r: 6, g: 6, b: 0, a: 0}
+    - _WetColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
+    - _WetMaskTiling: {r: 1.2, g: 1.2, b: 0, a: 0}
   m_BuildTextureStacks: []
