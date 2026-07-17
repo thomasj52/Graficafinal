@@ -3,7 +3,10 @@ guid: 239c3e3533b3fff45915306a922a3a8a
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
-  - _NormalMap: {fileID: 2800000, guid: 31c6163b6243da04d8523e5aa3b6c810, type: 3}
+  - _NormalMap: {fileID: 2800000, guid: aa0c3ea8965be9a4ab87cce181643e37, type: 3}
+  - _WaterNormal: {fileID: 2800000, guid: b59a96d28fb580141956844b613d65b2, type: 3}
+  - _MainTex: {fileID: 2800000, guid: 82802ccdfaa3ee74aaf637c950232fcc, type: 3}
+  - _Roughness: {fileID: 2800000, guid: 51430ce2313cf9d47b03ccd2f7b9ad05, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 
